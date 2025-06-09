@@ -1,0 +1,108 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    display: none;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+h2, h3 {
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+#category-select {
+    padding: 10px;
+    margin: 1rem 0;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00c9a7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00b494;
+}
+
+#options-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.option-btn {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.option-btn:hover {
+    background-color: #e0f7fa;
+}
+
+#timer {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    color: #d32f2f;
+}
+
+#leaderboard {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+#leaderboard li {
+    background-color: #f1f1f1;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 5px 0;
+}
+
+/* Show only the start screen by default */
+#start-screen {
+    display: block;
+}
